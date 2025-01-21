@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.swiper-pagination-bullet {
+  @apply bg-blue-950 opacity-50;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-blue-950 opacity-100;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-blue-950;
+}
+
+.swiper-button-disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
